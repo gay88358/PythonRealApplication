@@ -1,0 +1,43 @@
+
+
+class: 宣告的class，存儲變數跟函數
+constructor: 建構子，用來產生物件的函數
+destructor: 解構子，用來消除物件的函數
+instance: 透過class產生出來的物件
+delegate: A instance把工作分配給B instance
+member variable: class裡面的變數(self.variable)
+member function: class裡面的函數(or operation)
+inheritance: child class 繼承 base class的所有資訊
+polymorphism: 視所有物件為base class
+
+
+普通class 語法
+class BaseClass:
+    def __init__(self, parameter...):
+        self._parameter = parameter
+    
+    def operation1(self, parameter...):
+        # do something...
+    
+    def operation2(self, parameter...):
+        # de something...
+
+繼承語法: ()裡面放要繼承的class也就是baseClass
+class ChildClass(BaseClass):
+    def __init__(self, parameter...):
+        呼叫base class的建構子
+        BaseClass.__init__(self, parameter...)
+    
+    def operation3(self):
+        self._parameter #使用base calss的變數
+    
+    def operation4(self):
+        BaseClass.operation1(self) # 使用base class的函數
+
+透過建構子產生instance
+child 稱呼為instance of ChildClass
+child = ChildClass(parameter)
+child.operation()
+.....
+
+

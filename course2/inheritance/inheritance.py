@@ -19,6 +19,7 @@ class Checking(Account):
         Account.__init__(self, filePath)
         self.fee = 10
     def transfer(self, amount):
+        Account.withdraw(self, amount)
         self.balance = self.balance - amount - self.fee
 
 account = Account("./balance.txt")
