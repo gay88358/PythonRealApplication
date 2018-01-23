@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Hello</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <header>
+        <ul class="header">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>            
+    </header>
+    <div class="container">
+        {%block content%}
+        {%endblock%}
+    </div>
+    <div class="image-content">
+        <div class="">
+    </div>
+</body>
+</html>
