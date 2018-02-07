@@ -13,7 +13,8 @@
 
 
 if __name__ =='__main__':
-    score = 60
+    score = input('input your score: ')
+    score = int(score)
     if score >= 60:
         print('你及格')
     elif score < 60 and score >= 30:

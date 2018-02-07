@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     body {
       font-size: 16px;
       color: white;
@@ -42,22 +47,29 @@
       height: 100%;
     }
     .image-content img {
-      margin-bottom: 10px;
       width: 100%;
     }
 
     .four-images-content {
       width: 100%;
       margin: 0;
-      padding: 0;
+      padding: 0;    
+      margin-top: 1.2%;  
     }
 
     .four-images-content img {
-      width: 48.9%;
-      margin-left: 10px;
-      margin-bottom: 10px;
-      display: inline;
+      margin: 0;
+      padding: 0;
+      width: 48%;
+      float: left;
+      margin-left: 1.33%;
+      margin-bottom: 1.2%;
     }
+
+    .clear {
+      clear: both;
+    }
+
     .list-item {
       display: inline;
       list-style: none;
@@ -75,6 +87,7 @@
     .list {
       margin: 0 auto;
       width: 980px;
+      padding-top: 3%;
     }
     footer {
       background-color: rgb(242, 242, 242);
@@ -82,6 +95,9 @@
     .content {
       display: inline-block;
       width: 18%;
+    }
+    .text {
+      margin-top: 10px;
     }
     .text p {
       border-top: 1px rgb(136, 136, 136) solid;
@@ -107,12 +123,15 @@
       <img src="{{ url_for('static', filename='p1.png') }}">
       <img src="{{ url_for('static', filename='p2.png') }}">
     </div>
+    
     <div class="four-images-content">
       <img src="{{ url_for('static', filename='p3.png') }}">
       <img src="{{ url_for('static', filename='p4.png') }}">
       <img src="{{ url_for('static', filename='p5.png') }}">
       <img src="{{ url_for('static', filename='p6.png') }}">
     </div>
+    <div class="clear"></div>
+
     <footer>
       <div class="list">
         <div class="content">

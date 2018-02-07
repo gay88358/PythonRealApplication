@@ -9,6 +9,8 @@ member variable: class裡面的變數(self.variable)
 member function: class裡面的函數(or operation)
 inheritance: child class 繼承 base class的所有資訊
 polymorphism: 視所有物件為base class
+function overloading:同樣的名稱，回傳型態，接收不同參數
+function overwrite: 重新定義base class的函數
 
 
 普通class 語法

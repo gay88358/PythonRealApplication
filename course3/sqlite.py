@@ -13,6 +13,7 @@ def create_table():
     conn.commit() # commit 去資料庫，資料庫才會更新
     conn.close() # 關閉連線
 
+
 def insert(item, quantity, price):
     conn = sqlite3.connect("lite.db")
     cur = conn.cursor()
